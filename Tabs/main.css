@@ -1,0 +1,20 @@
+* html { margin:0; padding:0; }
+html, body { margin:0; padding:0; font-size: 14px; }
+div { margin:0; padding:0; }
+
+a { width: 100%; display:block; background-color: #c1c1c1; color: #000000; text-decoration: none; }
+a:active, a:visited { background-color: #c1c1c1; color: #000; }
+a:hover { background-color: #000000; color: #FFFFFF; }
+
+.tabs-container { width: 600px; margin: 50px; border: 1px solid #000000; padding:15px; }
+.tabs-heading { width:600px; text-align: center; padding-bottom: 5px; border-bottom: 1px solid #000000; }
+.tabs-body { margin-top: 5px; }
+
+.tabs { display: inline-block; width:200px; background-color: #c1c1c1; font-size; 1.5em; }
+.tabs.on { width: 193px; background-color: #000000; color: #FFFFFF; }
+
+.tabs-text { display: inline-block; width:600px; background-color: #c1c1c1; font-size: 1em; }
+.tabs-text.left { display:block; }
+.tabs-text.center { display:none; }
+.tabs-text.right { display:none; }
+.tabs-text.on { display:block; }

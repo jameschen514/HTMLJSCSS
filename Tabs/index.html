@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css" media="screen" />
+</head>
+<body>
+    <div class="tabs-container">
+        <div class="tabs-heading">
+                <div class="tabs left on"><a href="#">Chicken</a></div>
+                <div class="tabs center"><a href="#">Beef</a></div>
+                <div class="tabs right"><a href="#">Sea food</a></div>
+        </div>
+        <div class="tabs-body">
+            <div class="tabs-text left on">Chicken Chicken Chicken Chicken</div>
+            <div class="tabs-text center">Beef Beef Beef Beef Beef Beef</div>
+            <div class="tabs-text right">Sea food Sea food Sea food</div>
+        </div>
+    </div>
+    <!--<script src="jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+	    var $body = $(".tabs-container");
+	    var chickenTab = $body.find(".tabs.left a");
+	    var chickenBody = $body.find(".tabs-text.left");
+	    var beefTab = $body.find(".tabs.center a");
+	    var beefBody = $body.find(".tabs-text.center");
+	    var seafoodTab = $body.find(".tabs.right a");
+	    var seafoodBody = $body.find(".tabs-text.right");
+
+	    $(chickenTab).on("click", function(){
+		$(chickenBody).show();
+		$(beefBody).hide();
+		$(seafoodBody).hide();
+	    });
+
+	    $(beefTab).on("click", function(){
+		$(chickenBody).hide();
+		$(beefBody).show();
+		$(seafoodBody).hide();
+	    });
+
+	    $(seafoodTab).on("click", function(){
+		$(chickenBody).hide();
+		$(beefBody).hide();
+		$(seafoodBody).show();
+	    });
+
+	});
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        html, body { margin:0; padding:0; }
+        div, div > img { margin:0; padding:0; border:none; }
+        .baa-container { position: relative; width: 255.547px; }
+        .baa-one { position: absolute; z-index: 1; top: 0; left: 0; }
+        .baa-two { position: absolute; z-index: 2; top: 0; left: 0; overflow: hidden; }
+        .baa-two-container { position: relative; top:0; left:0; width: 100%; }
+        .baa-divider { position: absolute; z-index: 3; top:0; left: 45%; }
+        .baa-crop-1 { position: absolute; z-index: 4; top:0; left:0; }
+    </style>
+</head>
+<body>
+<div class="baa-container">
+    <div class="baa-one">
+        <img src="two.jpg" width="auto" height="150" alt="One" />
+    </div>
+    <div class="baa-two">
+        <div class="baa-two-container">
+            <img src="one.jpg" width="auto" height="150" alt="Two" />
+        </div>
+    </div>
+    <div class="baa-divider">
+        <img src="divider.png" width="5" height="150" alt="" />
+    </div>
+</div>
+<script src="jquery.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
