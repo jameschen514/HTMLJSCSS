@@ -1,0 +1,13 @@
+/* preprocessor */
+* html { margin:0; padding:0; }
+html { margin:0; padding:0; }
+body { margin:0; padding:0; font-size: 12px; }
+.body-font { font-size: 2em; }
+/* preprocessor end */
+
+.ticker-wrapper { margin: 0 auto; }
+.ticker-element { display: inline-block; border: 1px solid #000; margin: 0 1px; padding: 2; }
+.ticker-symbol { font-size: 2em; text-align: center; }
+.ticker-price { font-size: 4em; text-align: center; }
+.ticker-low { display:inline-block; font-size: 2em; } 
+.ticker-high { display: inline-block; font-size: 2em; }

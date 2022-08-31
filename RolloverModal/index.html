@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .wrapper { position: relative; margin-top: 200px; }
+    .modal { position: absolute; left: 20px; top: -100px; display:none; width: 300px; height: 100px; background: #0F0; }
+    </style>
+</head>
+<body>
+    <div class="wrapper"><a href="#">Open sesame</a><div class="modal">Hello There</div></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div a").on("mouseover", function(){
+               $(".modal").show(); 
+            });
+
+            $("div a").on("mouseout", function(){
+                $(".modal").hide();
+            });
+
+            $(".modal").on("mouseover", function() {
+                $(".modal").show();
+            });
+
+            $(".modal").on("mouseout", function() {
+                $(".modal").hide();
+            });
+
+        });
+    </script>
+</body>
+</html>

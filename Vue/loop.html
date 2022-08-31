@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css" media="screen" />
+</head>
+<body>
+    <section class="ticker-wrapper">
+        <div class="ticker-element" v-for="inst in institution" :key="institution.id"> 
+            <div class="ticker">
+                <div class="ticker-symbol">
+                    {{ inst.symbol }}
+                </div>
+            </div>
+            <div class="ticker">
+                <div class="ticker-price">
+                    {{ inst.price }}
+                </div>
+            </div>
+            <div class="ticker">
+                <div class="ticker-low">
+                    {{ inst.low }}
+                </div>
+                <span class="body-font">/</span>
+                <div class="ticker-high">
+                    {{ inst.high }}
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: ".ticker-wrapper",
+            data: {
+                institution: [ 
+                    { id: 1, symbol: "ABC", price: "160", low: 155, high: 165 },
+                    { id: 2, symbol: "DEF", price: "140", low: 135, high: 145 },
+                    { id: 3, symbol: "HIJ", price: "180", low: 175, high: 185 },
+                    { id: 4, symbol: "KLM", price: "140", low: 145, high: 155 },
+                    { id: 5, symbol: "NOP", price: "130", low: 125, high: 135 }
+                ]
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <style type="text/css">
+    /*
+    @media screen and (min-width: 1024px) {
+        body { background: #F00; color: #000; }
+        #main { color: #CCCCCC; margin-left: 7em; padding: 2em 0 1px 5%; border-left: 1px solid; }
+        #nav-wrapper { float:right; }
+        div#nav { width:112px; margin: 0 auto; background: #FFDDDD; }
+        div#nav ul { margin:0; padding:0; border: 1px solid #AAAAAA; border-width:0 1px; }
+        div#nav li { position: relative; text-align: center; list-style: none; margin:0; float:right; width:7em; border-bottom: 1px solid #CCCCCC; }   
+        div#nav ul ul { position: absolute; width:7em; display:none; }
+        div#nav ul ul li { border:1px solid #CCCCCC; min-width:1024x; max-width: 1280xp; background: #FF0; right:-75px;}
+        div#nav li a { display: block; padding: 0.25em 0 0.25em 0.5em; text-decoration: none; }
+        div#nav > ul a { width: auto; }
+        div#nav li:hover { background: #EEBBBB; }
+        div#nav li.submenu { background: yellow; }
+        div#nav ul.level1 li.submenu:hover ul.level2, 
+        div#nav ul.level2 li.submenu:hover ul.level3 { width:50px; display:block;}
+        div#nav ul.level2 { top:1.5em; left: -13px; }
+        div#nav ul.level3 { top:-1px; left:7em; border-top:1px solid #CCCCCC;  }
+    }
+
+    @media screen and (min-width: 640px) and (max-width: 1023px) {
+        body { background: #0F0; color: #000; }
+        #main { color: #CCCCCC; margin-left: 7em; padding: 2em 0 1px 5%; border-left: 1px solid; }
+        #nav-wrapper { float:right; }
+        div#nav { width:112px; margin: 0 auto; background: #FFDDDD; }
+        div#nav ul { margin:0; padding:0; border: 1px solid #AAAAAA; border-width:0 1px; }
+        div#nav li { position: relative; text-align: center; list-style: none; margin:0; float:right; width:7em; border-bottom: 1px solid #CCCCCC; }   
+        div#nav ul ul { position: absolute; width:7em; display:none; }
+        div#nav ul ul li { border:1px solid #CCCCCC; min-width:662px; max-width: 1280xp; background: #FF0; right:-75px;}
+        div#nav li a { display: block; padding: 0.25em 0 0.25em 0.5em; text-decoration: none; }
+        div#nav > ul a { width: auto; }
+        div#nav li:hover { background: #EEBBBB; }
+        div#nav li.submenu { background: yellow; }
+        div#nav ul.level1 li.submenu:hover ul.level2, 
+        div#nav ul.level2 li.submenu:hover ul.level3 { width:50px; display:block;}
+        div#nav ul.level2 { top:1.5em; left: -13px; }
+        div#nav ul.level3 { top:-1px; left:7em; border-top:1px solid #CCCCCC;  }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 639px) {
+        * { margin:0; padding:0; }
+        body { background: #00F; color: #000; }
+        #main { color: #CCCCCC; margin-left: 7em; padding: 2em 0 1px 5%; border-left: 1px solid; }
+        #nav-wrapper { float:right; }
+        div#nav { width:112px; margin: 0 auto; background: #FFDDDD; }
+        div#nav ul { margin:0; padding:0; border: 1px solid #AAAAAA; border-width:0 1px; }
+        div#nav li { position: relative; text-align: center; list-style: none; margin:0; float:right; width:7em; border-bottom: 1px solid #CCCCCC; }   
+        div#nav ul ul { position: absolute; width:7em; display:none; }
+        div#nav ul ul li { border:1px solid #CCCCCC; min-width:500px; width: 100%; background: #FF0; right:-75px;}
+        div#nav li a { display: block; padding: 0.25em 0 0.25em 0.5em; text-decoration: none; }
+        div#nav > ul a { width: auto; }
+        div#nav li:hover { background: #EEBBBB; }
+        div#nav li.submenu { background: yellow; }
+        div#nav ul.level1 li.submenu:hover ul.level2, 
+        div#nav ul.level2 li.submenu:hover ul.level3 { width:50px; display:block;}
+        div#nav ul.level2 { top:1.5em; left: -13px; }
+        div#nav ul.level3 { top:-1px; left:7em; border-top:1px solid #CCCCCC;  }
+    }
+    */
+
+
+    </style>
+
+    <div id="nav-wrapper">
+    <div id="nav">
+        <ul class="level1">
+            <li class="submenu">
+                <a href="/services/">Services</a>
+                <ul class="level2">
+                    <li><a href="/services/strategy/">Strategy</a></li>
+                    <li><a href="/services/optimize/">Optimization</a></li>
+                    <li><a href="/services/guidance/">Guidance</a></li>
+                    <li><a href="/services/training/">Training</a></li>
+                </ul>
+            </li>
+            
+            <div style="clear:both;"></div>
+        </ul><div style="clear:both;"></div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //$("#nav .level2).width($(window).width());
+
+            //$("div#nav ul ul li").width($(window).width());
+
+            /*
+            $(window).resize(function(){
+             //   $("div#nav ul ul li").width($(window).width());
+
+            });
+           */
+        });
+    </script>
+</body>
+</html>
