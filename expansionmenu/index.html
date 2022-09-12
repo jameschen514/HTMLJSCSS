@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * html, html, html body { margin:0; padding:0; border: none; }
+        .verticle-menu-container { margin:20px auto 0 auto; }
+        .menu-container { position: relative;  width: 600px; height:300px; overflow: hidden; } 
+        .menu-category { position: absolute; width:120px; height: 300px; display:block; }
+        .category1 { bottom: -200px; left:0; width: 120px; background-color: red; }
+        .category2 { bottom: -200px; left:120px; width: 120px; background-color: orange; }
+        .category3 { bottom: -200px; left: 240px; width: 120px; background-color: yellow; }
+        .category4 { bottom: -200px; left: 360px; width: 120px; background-color: green; }
+        .category5 { bottom: -200px; left: 480px; width: 120px; background-color: blue; }
+
+    </style>
+</head>
+<body>
+    <div class="verticle-menu-container">
+        <div class="menu-container">
+            <div class="menu-category category1">
+                1
+            </div>
+            <div class="menu-category category2">
+                2
+            </div>
+            <div class="menu-category category3">
+                3
+            </div>
+            <div class="menu-category category4">
+                4
+            </div>
+            <div class="menu-category category5">
+                5
+            </div>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
